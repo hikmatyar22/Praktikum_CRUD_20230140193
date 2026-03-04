@@ -93,6 +93,7 @@ Digunakan untuk memperbarui data user yang sudah ada berdasarkan ID.
 - **Method:** `PUT`
 - **Headers:**
   - `Content-Type: application/json`
+- Merubah Nama dari Hikmatyar Ke Hikmatyar Alghifary
 
 ### Request Body
 ```json
@@ -122,6 +123,7 @@ Digunakan untuk menghapus data user berdasarkan ID.
 - **URL:** `/api/users/{id}`
 - `/api/users/6b21ee37-3aaa-4137-8df8-428c046c42b6`
 - **Method:** `DELETE`
+- Menghapus Akun yang memilki id 6b21ee37-3aaa-4137-8df8-428c046c42b6 dengan nama Alghifary
 
 ### Response Body (200 OK)
 ```json
