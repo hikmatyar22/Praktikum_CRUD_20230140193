@@ -78,7 +78,7 @@ Digunakan untuk mendapatkan detail data user tertentu menggunakan ID.
   "data": {
     "id": "8013c6c6-8d8f-4192-9863-ca0663d2c2e3",
     "name": "Hikmatyar Alghifary",
-    "age": 0
+    "age": 20
   }
 }
 ```
