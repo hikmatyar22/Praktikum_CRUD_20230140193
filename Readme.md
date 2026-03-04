@@ -131,3 +131,9 @@ Digunakan untuk menghapus data user berdasarkan ID.
   "status": "success delete user with id 6b21ee37-3aaa-4137-8df8-428c046c42b6"
 }
 ```
+
+---
+
+## 6. Screenshoot Tampilan Antarmuka Web
+<img width="1919" height="970" alt="image" src="https://github.com/user-attachments/assets/27a89ea9-ba4c-4afd-bff0-487275f482fd" />
+
