@@ -134,6 +134,40 @@ Digunakan untuk menghapus data user berdasarkan ID.
 
 ---
 
-## 6. Screenshoot Tampilan Antarmuka Web
+## 6. Penanganan Request Tidak Valid (Invalid Request Handling)
+Jika data request tidak sesuai (misal: JSON tidak valid), Spring Boot akan mengembalikan error 400 atau 500 secara default tergantung pada jenis kesalahannya. Secara internal, sistem menggunakan `ValidationUtil` yang melempar `RuntimeException` jika validasi gagal.
+
+- **Method:** `POST` / `PUT`
+- **Response Body (Contoh Default)**
+```json
+{
+  "timestamp": "2024-03-04T04:36:27.000+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Validation error",
+  "path": "/api/users"
+}
+```
+
+---
+
+## 7. Penanganan User Tidak Ditemukan (User Not Found)
+Jika ID yang dicari tidak ada dalam sistem, `UserService` akan melempar `RuntimeException` dengan pesan "User not found".
+
+- **Method:** `GET` / `PUT` / `DELETE`
+- **Response Body (Contoh Default)**
+```json
+{
+  "timestamp": "2024-03-04T04:36:27.000+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "User not found",
+  "path": "/api/users/{id}"
+}
+```
+
+---
+
+## 8. Screenshoot Tampilan Antarmuka Web
 <img width="1919" height="970" alt="image" src="https://github.com/user-attachments/assets/27a89ea9-ba4c-4afd-bff0-487275f482fd" />
 
